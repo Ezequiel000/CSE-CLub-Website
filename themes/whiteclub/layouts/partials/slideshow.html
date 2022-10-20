@@ -1,0 +1,116 @@
+<div id="carouselExampleIndicators" class="carousel slide slideshow" data-ride="carousel">
+  <ol class="carousel-indicators">
+
+    {{ if .Site.Params.slideshow.pic1 }}
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    {{ end }}
+    {{ if .Site.Params.slideshow.pic2 }}
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    {{ end }}
+    {{ if .Site.Params.slideshow.pic3 }}
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    {{ end }}
+    {{ if .Site.Params.slideshow.pic4 }}
+    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+    {{ end }}
+    {{ if .Site.Params.slideshow.pic5 }}
+    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+    {{ end }}
+    {{ if .Site.Params.slideshow.pic6 }}
+    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+    {{ end }}
+  </ol>
+
+{{ if .Site.Params.slideshow.pic1 }}
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      {{ if .Site.Params.slideshow.pic1.file }}
+      <img src="{{ .Site.Params.slideshow.pic1.file }}" alt="First slide">
+      {{ end }}
+      <div class="carousel-caption d-none d-md-block">
+        {{ if .Site.Params.slideshow.pic1.title }}
+        <h5>{{ .Site.Params.slideshow.pic1.title }}</h5>
+        {{ end }}
+        {{ if .Site.Params.slideshow.pic1.desc }}
+        <p>{{ .Site.Params.slideshow.pic1.desc }}</p>
+        {{ end }}
+      </div>
+    </div>
+    <div class="carousel-item">
+      {{ if .Site.Params.slideshow.pic2.file }}
+      <img src="{{ .Site.Params.slideshow.pic2.file }}" alt="Second slide">
+      {{ end }}
+      <div class="carousel-caption d-none d-md-block">
+        {{ if .Site.Params.slideshow.pic2.title }}
+        <h5>{{ .Site.Params.slideshow.pic2.title }}</h5>
+        {{ end }}
+        {{ if .Site.Params.slideshow.pic2.desc }}
+        <p>{{ .Site.Params.slideshow.pic2.desc }}</p>
+        {{ end }}
+      </div>
+    </div>
+    <div class="carousel-item">
+      {{ if .Site.Params.slideshow.pic3.file }}
+      <img src="{{ .Site.Params.slideshow.pic3.file }}" alt="Third slide">
+      {{ end }}
+      <div class="carousel-caption d-none d-md-block">
+        {{ if .Site.Params.slideshow.pic3.title }}
+        <h5>{{ .Site.Params.slideshow.pic3.title }}</h5>
+        {{ end }}
+        {{ if .Site.Params.slideshow.pic3.desc }}
+        <p>{{ .Site.Params.slideshow.pic3.desc }}</p>
+        {{ end }}
+      </div>
+    </div>
+    <div class="carousel-item">
+      {{ if .Site.Params.slideshow.pic4.file }}
+      <img src="{{ .Site.Params.slideshow.pic4.file }}" alt="Fourth slide">
+      {{ end }}
+      <div class="carousel-caption d-none d-md-block">
+        {{ if .Site.Params.slideshow.pic4.title }}
+        <h5>{{ .Site.Params.slideshow.pic4.title }}</h5>
+        {{ end }}
+        {{ if .Site.Params.slideshow.pic4.desc }}
+        <p>{{ .Site.Params.slideshow.pic4.desc }}</p>
+        {{ end }}
+      </div>
+    </div>
+    <div class="carousel-item">
+      {{ if .Site.Params.slideshow.pic5.file }}
+      <img src="{{ .Site.Params.slideshow.pic5.file }}" alt="Fifth slide">
+      {{ end }}
+      <div class="carousel-caption d-none d-md-block">
+        {{ if .Site.Params.slideshow.pic5.title }}
+        <h5>{{ .Site.Params.slideshow.pic5.title }}</h5>
+        {{ end }}
+        {{ if .Site.Params.slideshow.pic5.desc }}
+        <p>{{ .Site.Params.slideshow.pic5.desc }}</p>
+        {{ end }}
+      </div>
+    </div>
+    <div class="carousel-item">
+      {{ if .Site.Params.slideshow.pic6.file }}
+      <img src="{{ .Site.Params.slideshow.pic6.file }}" alt="Sixth slide">
+      {{ end }}
+      <div class="carousel-caption d-none d-md-block">
+        {{ if .Site.Params.slideshow.pic6.title }}
+        <h5>{{ .Site.Params.slideshow.pic6.title }}</h5>
+        {{ end }}
+        {{ if .Site.Params.slideshow.pic6.desc }}
+        <p>{{ .Site.Params.slideshow.pic6.desc }}</p>
+        {{ end}}
+      </div>
+    </div>
+  </div>
+
+  {{ end }}
+
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>

@@ -1,0 +1,116 @@
+baseurl = "https://example.com/"
+title = "CSUSB CSE Club"
+# themesDir = "../../"
+theme = "whiteclub"
+languageCode = "ja"
+# Disqus shortname
+#disqusShortname = ""
+# google analytics tracking id
+#googleAnalytics = ""
+pygmentsCodefences = true
+pygmentsUseClasses = true
+pygmentsOptions = "linenos=table"
+# Copyright notice. This is displayer in the footer.
+copyright = "&copy; Copyright 2017 Foo Bar"
+
+[params]
+  avatar = "/images/logo.png"
+  # useCDN = false
+  # showShareIcons = true
+  # Date format
+  dateFormat = "January 2, 2006"
+ #dateFormat = "2 January, 2006"
+ # description = "EA4RCT"
+
+
+  # Activities info
+  [params.activities]
+
+    # Using Google calendar on "insert calendar"
+    calendarPublicURL = "https://calendar.google.com/calendar?cid=ZWE0cmN0Lm9yZ19oNjVidW1obzRydGRwNWRsYmtpajFodWxmY0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t"
+
+   # iframe from Google Calendar: Better without title, without print icon, using month, wight: 500, height: 400
+   calendarIframe = '''
+   <iframe src="https://calendar.google.com/calendar/b/2/embed?showTitle=0&amp;showDate=0&amp;showCalendars=0&amp;height=400&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=ea4rct.org_h65bumho4rtdp5dlbkij1hulfc%40group.calendar.google.com&amp;color=%23691426&amp;ctz=Europe%2FMadrid" style="border-width:0" width="500" height="400" frameborder="0" scrolling="no"></iframe>
+   '''
+
+  # This is displayer in About page.
+  [params.about]
+    twitter = "whiteclub"
+    github = "Carson Weeks"
+    gitea = "http://git.radio.clubs.etsit.upm.es"
+    email = "mail@carsonweeks.com"
+
+    localizacion =  "5500 University Pkwy, California"
+    codigopostal =  "92407, San Bernardino"
+    #metro = "Metro: Ciudad Universitaria, Vicente Aleixandre"
+    #cif = "G66666666"
+    # telefono = 666666666
+    #horario = "De lunes a viernes de 9 a 21"
+
+  # Slideshow of pictures on homepage.
+  [params.slideshow]
+    [params.slideshow.pic1]
+      file = "/images/esri.jpg"
+      title = "ESRI tour comming in Febuary!"
+      desc = "This pic was on South Africa"
+    [params.slideshow.pic2]
+      file = "/slideshow/pic2.jpg"
+      title = "A second great pic"
+      desc = "This pic was on North Africa"
+    [params.slideshow.pic3]
+      file = "/slideshow/pic3.jpg"
+      title = "The third great pic"
+      desc = "This pic was on East Africa"
+    [params.slideshow.pic4]
+      file = "/slideshow/pic4.jpg"
+      title = "Fourth great pic"
+      desc = "This pic was on West Africa"
+    [params.slideshow.pic5]
+      file = "/slideshow/pic5.jpg"
+      title = "Fifth great pic"
+      desc = "This pic was on Center Africa"
+    [params.slideshow.pic6]
+      file = "/slideshow/pic6.jpg"
+      title = "Sixth pic"
+      desc = "This pic was on South-West Africa"
+
+  [taxonomies]
+    category = "categorias"
+    tag = "tags"
+    series = "series"
+
+  # Header Menu
+  [[menu.main]]
+    name = "Activities"
+    identifier = "activities"
+    url = "/activities/"
+    weight = 1
+  [[menu.main]]
+    name = "Blog"
+    identifier = "blog"
+    url = "/blog/"
+    weight = 2
+
+  [[menu.main]]
+    name = "Archives"
+    identifier = "archives"
+    url = "/archives/"
+    weight = 5
+  [[menu.main]]
+    name = "Officers"
+    identifier = "team"
+    url = "/team/"
+    weight = 6
+  [[menu.main]]
+    name = "About"
+    identifier = "about"
+    url = "/about/"
+    weight = 7
+
+  # Footer Menu
+  [[menu.footer]]
+    name = "About"
+    weight = 1
+    identifier = "about"
+    url = "/about/"

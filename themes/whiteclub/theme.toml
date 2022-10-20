@@ -1,0 +1,12 @@
+name = "whiteclub"
+license = "GPLV3"
+licenselink = "https://git.radio.clubs.etsit.upm.es/Whiteclub/Whiteclub-Hugo-Theme/src/branch/master/LICENSE.md"
+description = "Simple Hugo theme developed for a community. Based on Whiteplain."
+homepage = "https://git.radio.clubs.etsit.upm.es/Whiteclub/Whiteclub-Hugo-Theme"
+tags = ["blog", "activities", "community", "simple"]
+features = ["blog", "activities", "white", "simple"]
+min_version = "0.30"
+
+[author]
+  name = "Whiteclub"
+  homepage = "https://whiteclub.radio.clubs.etsit.upm.es/"
