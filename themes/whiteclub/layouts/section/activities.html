@@ -2,52 +2,52 @@
 {{ define "main" }}
   <div class="main" role="main">
     <div class="row">
-        <div class="col-md-6">
 
-            <h2>Upcomming Events</h2>
-            <ul>
-                {{ range .Pages.Reverse.ByParam "startDate" }}
-                  {{ if now.Before (time .Params.startDate) }}
-                    <li><span>{{ dateFormat "02 Jan 2006" .Params.startDate }}</span> &raquo; <a href="{{ .Site.Params.activities.calendarPublicURL}}">{{ .Title }}</a></li>
-                  {{ end }}
-                {{ end }}
-            </ul>
 
-            <h2>Previous Events</h2>
-            <ul>
-              {{ range (.Pages.ByParam "startDate").Reverse }}
-                {{ if now.After (time .Params.startDate) }}
-                  <li><span>{{ dateFormat "02 Jan 2006" .Params.startDate }}</span> &raquo; <a href="{{.Site.Params.activities.calendarPublicURL}}">{{ .Title }}</a></li>
-                {{ end }}
-              {{ end }}
-            </ul>
-        </div>
-
-      <div class="col-md-6">
-    	<h2>Activity Calander</h2>
+      <div class="col-md-12">
+    	<h2>Activity Calendar</h2>
       <div id="calendar" style="height: 800px;"></div>
       </div>
     </div>
+  <div class ="row">
+    <div class="col-md-5">
+
+      <h2>Upcomming Events</h2>
+      <ul>
+          {{ range .Pages.Reverse.ByParam "startDate" }}
+            {{ if now.Before (time .Params.startDate) }}
+              <li><span>{{ dateFormat "02 Jan 2006" .Params.startDate }}</span> &raquo; <a href="{{ .Site.Params.activities.calendarPublicURL}}">{{ .Title }}</a></li>
+            {{ end }}
+          {{ end }}
+      </ul>
+
+      <h2>Previous Events</h2>
+      <ul>
+        {{ range (.Pages.ByParam "startDate").Reverse }}
+          {{ if now.After (time .Params.startDate) }}
+            <li><span>{{ dateFormat "02 Jan 2006" .Params.startDate }}</span> &raquo; <a href="{{.Site.Params.activities.calendarPublicURL}}">{{ .Title }}</a></li>
+          {{ end }}
+        {{ end }}
+      </ul>
+  </div>
+  </div>
   </div>
 <script>
-'using strict';
-
-const calendar = new Calendar(container, {
-  // Options of the calendar instance
+const Calendar = tui.Calendar;  
+const container = document.getElementById('calendar');
+const options = {
   defaultView: 'month',
-  isReadOnly: true,
   timezone: {
-    // ...
+  
   },
-  theme: {
-    // ...
-  },
-  template: {
-    // ...
-  },
-});
-
-
-
+  calendars: [
+    {
+      id: 'cal2',
+      name: 'Work',
+      backgroundColor: '#00a9ff',
+    },
+  ],
+};
+const calendar = new Calendar(container, options);
 </script>
 {{ end }}

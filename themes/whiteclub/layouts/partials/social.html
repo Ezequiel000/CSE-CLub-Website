@@ -97,6 +97,9 @@
     {{- with .vine }}
     <li><a href="//vine.co/{{ . }}" target="_blank"><i class="fab fa-vine"></i></a></li>
     {{- end }}
+    {{- with .discord }}
+    <li><a href="//discord.gg/{{ . }}" target="_blank"><i class="fab fa-discord"></i></a></li>
+    {{- end }}
     {{- with .email }}
     <li><a href="mailto:{{ . }}" target="_blank"><i class="fas fa-envelope"></i></a></li>
     {{- end }}

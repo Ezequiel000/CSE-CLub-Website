@@ -36,10 +36,11 @@ copyright = "&copy; Copyright 2017 Foo Bar"
 
   # This is displayer in About page.
   [params.about]
-    twitter = "whiteclub"
-    github = "Carson Weeks"
-    gitea = "http://git.radio.clubs.etsit.upm.es"
+    #twitter = "whiteclub"
+    github = "https://github.com/CheatCodeSam"
+    #gitea = "http://git.radio.clubs.etsit.upm.es"
     email = "mail@carsonweeks.com"
+    discord = "https://discord.gg/cYRmPJ9e8k"
 
     localizacion =  "5500 University Pkwy, California"
     codigopostal =  "92407, San Bernardino"
@@ -53,11 +54,11 @@ copyright = "&copy; Copyright 2017 Foo Bar"
     [params.slideshow.pic1]
       file = "/images/esri.jpg"
       title = "ESRI tour comming in Febuary!"
-      desc = "This pic was on South Africa"
+      desc = "Sign up now!!!"
     [params.slideshow.pic2]
-      file = "/slideshow/pic2.jpg"
-      title = "A second great pic"
-      desc = "This pic was on North Africa"
+      file = "/images/robot-arm.png"
+      title = ""
+      desc = ""
     [params.slideshow.pic3]
       file = "/slideshow/pic3.jpg"
       title = "The third great pic"

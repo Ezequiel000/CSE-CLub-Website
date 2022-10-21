@@ -8,6 +8,7 @@ estudios: "B.S Computer Science and Engineering"
 correo: "eze.her.jr@gmail.com"
 # instagram: "https://www.instagram.com/test/"
 linkedin: "https://www.linkedin.com/in/eze-her-jr/"
+github: ""
 
 curso: 22-23
 ---
